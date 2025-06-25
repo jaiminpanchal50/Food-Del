@@ -1,0 +1,62 @@
+
+:root {
+  --font-styrene-a: "Styrene A", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-styrene-b: "Styrene B", -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-styrene-a);
+}
+
+.font-styrene-a {
+  font-family: var(--font-styrene-a);
+}
+
+.font-styrene-b {
+  font-family: var(--font-styrene-b);
+}
+
+/* Weight utilities */
+.font-thin {
+  font-weight: 100;
+}
+.font-light {
+  font-weight: 300;
+}
+.font-regular {
+  font-weight: 400;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-black {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.app{
+  width: 80%;
+  margin: 0 auto;
+}
