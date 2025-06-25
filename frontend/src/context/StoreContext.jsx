@@ -1,12 +1,11 @@
 import { createContext, useEffect, useState } from "react";
 import { food_list } from "../assets/assets";
 
-// eslint-disable-next-line react-refresh/only-export-components
 export const StoreContext = createContext(null);
 
 const StoreContextProvider = ({ children }) => {
   const [cartItem, setcartItem] = useState({});
-  
+
   const addToCart = (itemId) => {
     if (!cartItem[itemId]) {
       setcartItem((prev) => ({ ...prev, [itemId]: 1 }));
@@ -27,13 +26,14 @@ const StoreContextProvider = ({ children }) => {
       return newCart;
     });
   };
-    const getTotalCartItems = () => {
+
+  const getTotalCartItems = () => {
     return Object.values(cartItem).reduce((total, quantity) => total + quantity, 0);
   };
 
   useEffect(() => {
     console.log("cartItem", cartItem);
-     console.log("Total items:", getTotalCartItems()); // Log total items
+    console.log("Total items:", getTotalCartItems()); // Log total items
   }, [cartItem]);
 
   const contextValue = {
