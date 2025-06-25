@@ -27,9 +27,13 @@ const StoreContextProvider = ({ children }) => {
       return newCart;
     });
   };
+    const getTotalCartItems = () => {
+    return Object.values(cartItem).reduce((total, quantity) => total + quantity, 0);
+  };
 
   useEffect(() => {
     console.log("cartItem", cartItem);
+     console.log("Total items:", getTotalCartItems()); // Log total items
   }, [cartItem]);
 
   const contextValue = {
@@ -38,6 +42,7 @@ const StoreContextProvider = ({ children }) => {
     setcartItem,
     addToCart,
     removeItem,
+    getTotalCartItems
   };
 
   return (

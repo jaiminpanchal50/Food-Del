@@ -46,11 +46,17 @@
   position: relative;
 }
 .navbar-search-icon .dot {
-  min-width: 10px;
-  min-height: 10px;
-  position: absolute;
-  background-color: tomato;
-  border-radius: 5px;
-  top: -8px;
-  right: -8px;
+    min-width: 17px;
+    min-height: 17px;
+    position: absolute;
+    background-color: tomato;
+    border-radius: 12px;
+    top: -8px;
+    right: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    color: #fff;
+    font-weight: 900;
 }
