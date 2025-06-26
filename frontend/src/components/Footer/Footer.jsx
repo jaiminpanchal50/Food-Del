@@ -3,7 +3,7 @@ import './Footer.css'
 import { assets } from '../../assets/assets'
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer' id='footer'>
             <div className='foote-content'>
                 <div className='footer-left'>
                     <img src={assets.logo} alt='footer Logo' className='footer-logo' />
@@ -16,7 +16,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className='footer-center'>
-                    <h3>Contact Us</h3>
+                    <h2>Contact Us</h2>
                     <ul>
                         <li>Home</li>
                         <li>About Us</li>
@@ -25,7 +25,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='footer-right'>
-                    <h3>Get In Touch</h3>
+                    <h2>Get In Touch</h2>
                     <ul>
                         <li>+2222222232</li>
                         <li>test@gmail.com</li>
