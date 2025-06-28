@@ -12,7 +12,7 @@ const App = () => {
   return (
     <>
       {
-        login ? <LoginPopup /> : <></>
+        login ? <LoginPopup setlogin={setlogin} /> : <></>
       }
       <Navbar setlogin={setlogin} />
       <div className="app">
