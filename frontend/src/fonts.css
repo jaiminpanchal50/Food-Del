@@ -1,13 +1,13 @@
 /* Styrene A Font Family */
 @font-face {
   font-family: 'Styrene A';
-  src: url('../public/fonts/StyreneA-Thin-Trial-BF63f6cbd.otf') format('opentype');
+  src: url('/fonts/StyreneA-Thin-Trial-BF63f6cbd.otf') format('opentype');
   font-style: normal;
 }
 
 /* Styrene B Font Family */
 @font-face {
   font-family: 'Styrene B';
-  src: url('../public/fonts/StyreneB-Thin-Trial-BF63f6cbd.otf') format('opentype');
+  src: url('/fonts/StyreneB-Thin-Trial-BF63f6cbd.otf') format('opentype');
   font-style: normal;
 }
